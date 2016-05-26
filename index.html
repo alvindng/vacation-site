@@ -3,6 +3,7 @@
   <head>
     <title>Vacation Site</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/mystyle.css" media="screen" title="text/css" charset="utf-8">
   </head>
   <body>
     <div class="container">
@@ -14,17 +15,42 @@
         </ul>
         <h3>Vacation Site</h3>
       </header>
-
-      <div class="jumbotron">
+<!-- Carousel -->
+      <div id="myCarousel" class="carousel slide jumbotron" data-ride="carousel">
         <div class="container">
-          <h1>vacation trip</h1>
-          <p class="lead">welcome to your dream vacation</p>
-          <div class="nav nav-pills pull-right">
-            <a class="btn btn-success btn-sm active" href="#" alt="link to picuters page">picture</a>
-            <a class="btn btn-info btn-sm" href="#model" alt="text me more info">info</a>
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <h1>vacation trip</h1>
+              <p class="lead">welcome to your dream vacation</p>
+              <div class="nav nav-pills pull-right">
+                <a class="btn btn-success btn-sm active" href="#" alt="link to picuters page">picture</a>
+                <a class="btn btn-info btn-sm" href="#model" alt="text me more info">info</a>
+              </div>
+            </div>
+            <div class="item">
+              <p class="lead">something different</p>
+            </div>
+            <div class="item">
+              <p class="lead"><img class="img responsive" src="img/dog.jpg" alt="dog image"></p>
+            </div>
           </div>
         </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+
+
       </div>
+<!-- finished carousel -->
+
       <div class="row">
         <div class="col-md-4">
           <h3>Idea 1</h3>
@@ -77,5 +103,7 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
